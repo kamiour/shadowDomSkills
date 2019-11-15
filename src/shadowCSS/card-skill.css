@@ -12,7 +12,6 @@
     transition-duration: 0.3s;
     flex-direction: column;
     padding: 18px;
-    height: 100%;
 }
 
 .card-wrap:hover {
@@ -21,8 +20,12 @@
 
 .card-media {
     margin: 0 auto;
-    max-width: 55px;
+    max-width: 100px;
     margin-bottom: 15px;
+}
+
+.img {
+    height: 55px;
 }
 
 .card-header {
@@ -37,26 +40,20 @@
 .card-title {
     width: 100%;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     text-transform: uppercase;
     text-align: center;
     overflow-wrap: break-word;
-    margin-bottom: 10px;
-}
-
-.card-subtitle {
-    margin: 0;
-    font-size: 13px;
-    color: #dee0e4;
-    text-align: center;
-    text-transform: none;
-    overflow-wrap: break-word;
+    margin-bottom: 15px;
 }
 
 .card-description {
-    text-align: center;
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;;
     margin-top: 0;
+    color: #697685;
 }
 
 .img-content {

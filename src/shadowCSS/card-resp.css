@@ -1,25 +1,26 @@
 .card-wrap {
     border-radius: 15px;
+    background-color: #23b7a4;
+    box-shadow: 0 20px 20px rgba(39, 179, 109, 0.3);
 }
+
+.card-wrap:hover {
+    transform: rotate(10deg);
+} 
 
 .card-media {
     margin-bottom: 30px;
 }
 
 .img {
-    height: 50px;
-}
-
-.card-wrap {
-    background-color: #23b7a4;
-    padding: 20px;
+    height: 70px;
 }
 
 .card-title {
     font-size: 26px;
     color: white;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-top: 20px;
 }
 

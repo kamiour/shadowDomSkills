@@ -1,0 +1,32 @@
+.card-wrap {
+    border-radius: 25px;
+    background-color: black;
+}
+
+.card-wrap:hover {
+    transform: translateY(-20px);
+} 
+
+.card-media {
+    margin-bottom: 100px;
+}
+
+.img {
+    height: 85px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #da4648;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    text-transform: none;
+}
+
+.card-description {
+    color: #23b7a4;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
