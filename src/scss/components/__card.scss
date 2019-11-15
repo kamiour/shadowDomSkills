@@ -1,0 +1,45 @@
+.card {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  position: relative;
+
+  &-header {
+    position: relative;
+    width: 100%;
+  }
+
+  &-body-wrap {
+    width: 100%;
+  }
+
+  &-media {
+    margin: 0;
+  }
+
+  &-title {
+    width: 100%;
+    margin: 0;
+    @include font(15px, 600, 24px);
+    color: $color-main;
+    text-transform: uppercase;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+  }
+
+  &-subtitle {
+    margin: 0;
+    @include font(13px, 400, 18px);
+    color: $color-additional;
+    text-align: center;
+    text-transform: none;
+    overflow-wrap: break-word;
+  }
+
+  &-description {
+    text-align: center;
+    margin-top: 0;
+  }
+}

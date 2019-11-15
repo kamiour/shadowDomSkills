@@ -1,0 +1,28 @@
+.grid {
+  @include flex(center, stretch);
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 480px) {
+    @include spacing(8px);
+  }
+
+  @media screen and (min-width: 640px) {
+    @include spacing(12px);
+  }
+
+  @media screen and (min-width: 960px) {
+    @include spacing(15px);
+  }
+
+  .section-skills & {
+    @include spacing(0px);
+
+    @media screen and (min-width: 480px) {
+      @include spacing(7px);
+    }
+
+    @media screen and (min-width: 640px) {
+      @include spacing(10px);
+    }
+  }
+}

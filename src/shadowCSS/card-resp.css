@@ -1,0 +1,31 @@
+.card-wrap {
+    border-radius: 15px;
+}
+
+.card-media {
+    margin-bottom: 30px;
+}
+
+.img {
+    height: 50px;
+}
+
+.card-wrap {
+    background-color: #23b7a4;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 26px;
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card-description {
+    color: #da4648;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}

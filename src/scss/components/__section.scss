@@ -1,0 +1,99 @@
+.section {
+  min-height: 100vh;
+  padding: 0 0 30px 0;
+  margin: 0;
+  position: relative;
+  background-color: $color-additional-light;
+
+   &-layout {
+    @include flex(center, stretch);
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 480px) {
+      @include spacing(10px);
+    }
+  }
+
+  &-header {
+    width: 100%;
+    @include flex(center, flex-start);
+    flex-direction: column;
+    margin-top: 30px;
+
+    @media screen and (min-width: 480px) {
+      margin-top: 35px;
+    }
+
+  }
+  
+  &-title {
+    @include font(24px, 600, 36px);
+    margin-top: 10px;
+    margin-bottom: 45px;
+    padding-left: 12px;
+    border-left: 8px solid $color-secondary;
+    text-align: left;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 55px;
+    }
+
+    @media screen and (min-width: 640px) {
+      @include font(28px, 600, 38px);
+      margin-bottom: 65px;
+    }
+
+    @media screen and (min-width: 960px) {
+      @include font(30px, 600, 40px);
+      margin-bottom: 80px;
+    }
+
+  }
+
+  &-subtitle {
+    text-transform: uppercase;
+    @include font(20px, 700, 30px);
+  }
+
+  &-description {
+    @include font(14px, 400, 20px);
+    color: $color-additional;
+    margin: 0;
+    text-align: left;
+
+    @media screen and (min-width: 480px) {
+      @include font(16px, 400, 26px);
+    }
+
+    @media screen and (min-width: 960px) {
+      @include font(18px, 400, 28px);
+      margin: 0;
+    }
+
+  }
+
+  &-media {
+    position: relative;
+
+    @media screen and (min-width: 480px) {
+      & {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.col {
+  margin: 0;
+  min-height: 1px;
+  margin-bottom: 15px;
+
+  .section-skills & {
+    margin-bottom: 20px;
+  }
+
+  &.skill {
+    transition-duration: 0.5s;
+  }
+}
+

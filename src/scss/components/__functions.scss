@@ -1,0 +1,49 @@
+@mixin font($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin button($color, $background-color, $padding-v, $padding-h, $txt-decoration, $b-radius, $txt-transform) {
+  color: $color;
+  background-color: $background-color;
+  padding-top: $padding-v;
+  padding-bottom: $padding-v;
+  padding-left: $padding-h;
+  padding-right: $padding-h;
+  text-decoration: $txt-decoration;
+  border-radius: $b-radius;
+  text-transform: $txt-transform;
+}
+
+@mixin wrap($width, $height, $padding, $radius) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  border-radius: $radius;
+}
+
+@mixin spacing($space) {
+  margin: 0 $space*(-1);
+  > * {
+    padding: 0 $space;
+  }
+}
+
+@mixin overlay($index, $color, $opacity) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $index;
+  margin: 0;
+  background-color: $color;
+  opacity: $opacity;
+}

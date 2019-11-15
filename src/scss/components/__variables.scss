@@ -1,0 +1,29 @@
+$f-family-main: 'Ubuntu', sans-serif;
+$f-size-main: 14px;
+$f-weight-main: 400;
+$f-weight-bold: 700;
+$f-lheight-main: 18px;
+
+$color-main: black;
+$color-reverse: white;
+$color-secondary: #23b7a4;
+$color-completed: #da4648;
+$color-ongoing: #fad608;
+$color-additional: #dee0e4;
+$color-additional-light: rgb(247, 244, 244);
+$color-additional-dark: #697685;
+
+$color-bg-dark: #3a454d;
+$color-bg-black: black;
+$color-bg-blue: #e1e6ea;
+
+$color-overlay-dark: #08090a;
+$color-overlay: #d4dade;
+
+$color-button: rgba($color-bg-black, 0.3);
+$color-button-hover: rgba($color-bg-black, 0.4);
+$color-hero-overlay: rgba($color-bg-black, 0.3);
+$color-label-hover: rgba($color-bg-black, 0.6);
+$color-card-hover: rgba($color-bg-black, 0.6);
+$color-menu: rgba($color-bg-black, 0.8);
+$element-border: 2px solid $color-secondary;

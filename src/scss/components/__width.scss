@@ -1,0 +1,17 @@
+$column: 12;
+
+@mixin grid($m-width, $size) {
+  @media (min-width: $m-width) {
+    @for $i from 1 through $column {
+      .col-#{$i}#{$size} {
+        width: 100%/($column/$i);
+      }
+    }
+  }
+}
+
+@include grid(0, '');
+@include grid(480px, s);
+@include grid(640px, m);
+@include grid(960px, l);
+@include grid(1280px, xl)
